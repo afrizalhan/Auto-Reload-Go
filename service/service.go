@@ -35,7 +35,7 @@ func Reloader() {
 
 
 func ReadJSON() map[string]interface{} {
-	jsonData, err := ioutil.ReadFile("data.json")
+	jsonData, err := ioutil.ReadFile("status.json")
 	if err != nil {
 		panic(err)
 	}

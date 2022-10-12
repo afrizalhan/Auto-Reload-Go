@@ -9,14 +9,14 @@ import (
 func main(){
 	go service.Reloader()
 	r := gin.Default()
-	r.LoadHTMLGlob("templates/*.tmpl")
+	r.LoadHTMLGlob("template/*.html")
 	r.GET("/", index)
 	r.Run(":8080")
 }
 
 func index(c *gin.Context){
 	data := service.ReadJSON()
-	c.HTML(http.StatusOK, "index.tmpl", gin.H{
+	c.HTML(http.StatusOK, "index.html", gin.H{
 		"water":      data["statusWater"],
 		"wind":       data["statusWind"],
 		"waterValue": data["water"],

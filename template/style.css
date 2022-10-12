@@ -1,0 +1,53 @@
+html{
+    height: 100%;
+    margin:0;
+    padding:0;
+}
+body{
+    position: relative;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin:0;
+    padding:0;
+    height: 100%;
+}
+
+.left{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: #3D5ED6;
+}
+
+.water{
+    position:absolute;
+    top: 40%;
+    color: white;
+    text-align: center;
+    left: 30%;
+}
+
+.water h1{
+    font-size: 24px;
+}
+
+.right{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    left: 50%;
+    top: 0px;
+    background: #B3B57B;
+}
+
+.wind{
+    position:absolute;
+    top: 40%;
+    text-align: center;
+    left: 35%;
+}
+
+.wind h1{
+    font-size: 24px;
+}
