@@ -11,6 +11,7 @@ func main(){
 	r := gin.Default()
 	r.LoadHTMLGlob("template/*.html")
 	r.GET("/", index)
+	r.Static("/assets", "template/assets")
 	r.Run(":8080")
 }
 

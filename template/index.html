@@ -5,19 +5,21 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta http-equiv="refresh" content="15">
         <title>Laporan Status Air dan Angin</title>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="/assets/style.css">
     </head>
     <body>
         <div class="left">
             <div class="water">
+                <img src="/assets/sea-waves.png" alt="">
                 <h1>Status Ketinggian Air :</h1>
-                <p>50% (Bahaya)</p>
+                <p>{{.waterValue}} Meter ({{.water}})</p>
             </div>
         </div>
         <div class="right">
             <div class="wind">
+                <img src="/assets/wind.png" alt="">
                 <h1>Status Kecepatan Angin :</h1>
-                <p>50% (Bahaya)</p>
+                <p>{{.windValue}} Km/h ({{.wind}})</p>
             </div>
         </div>
     </body>
