@@ -85,9 +85,9 @@ func waterCondition(height int) string {
 
 func windCondition(condition int) string{
 	var status string
-	if condition <= 5 {
+	if condition <= 6 {
 		status = "Aman"
-	} else if condition >= 6 && condition <= 8 {
+	} else if condition >= 7 && condition <= 15 {
 		status = "Siaga"
 	} else {
 		status = "Bahaya"
